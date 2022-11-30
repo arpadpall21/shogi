@@ -58,9 +58,9 @@ export function Board() {
                                     }
                                 }
 
-                                let className = 'pieceImg'
+                                let className = 'pieceImg';
                                 if (d.p === 2) {
-                                    className += ' rottatePieceImg'
+                                    className += ' rottatePieceImg';
                                 }
 
                                 return <td key={cellId} cellkey={cellId} style={{backgroundColor}} onClick={pieceMoveHandler}>

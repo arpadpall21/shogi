@@ -179,9 +179,9 @@ function rookMoves(player, piece, board, v, h) {
     ];
 
     if (piece === 'promotedRook') {
-        possibleMoves = calcPossibleContinousMoves(v, h, possibleMoves, board)
-        possibleMoves.push([-1, -1], [-1, 1], [1, 1], [1, -1])
-        return possibleMoves
+        possibleMoves = calcPossibleContinousMoves(v, h, possibleMoves, board);
+        possibleMoves.push([-1, -1], [-1, 1], [1, 1], [1, -1]);
+        return possibleMoves;
     }
 
     return calcPossibleContinousMoves(v, h, possibleMoves, board);
@@ -196,9 +196,9 @@ function bishopMoves(player, piece, board, v, h) {
     ];
 
     if (piece === 'promotedBishop') {
-        possibleMoves = calcPossibleContinousMoves(v, h, possibleMoves, board)
-        possibleMoves.push([-1, 0], [0, 1], [1, 0], [0, -1])
-        return possibleMoves
+        possibleMoves = calcPossibleContinousMoves(v, h, possibleMoves, board);
+        possibleMoves.push([-1, 0], [0, 1], [1, 0], [0, -1]);
+        return possibleMoves;
     }
 
     return calcPossibleContinousMoves(v, h, possibleMoves, board);
@@ -218,7 +218,7 @@ function inverseMoves(moves) {   // inverses possible moves for player 2
         }
     }
 
-    return moves
+    return moves;
 }
 
 function calcPossibleContinousMoves(v, h, moves, board) {
@@ -311,5 +311,5 @@ function pieceShouldUpgrade(board, v, h) {
         return pieceUpgradeMap[piece];
     }
 
-    return false
+    return false;
 }
