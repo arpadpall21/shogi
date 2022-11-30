@@ -4,7 +4,7 @@ export const defaultBoardState = [
     [{p:2, piece:'lance', state:null}, {p:2, piece:'knight', state:null}, {p:2, piece:'silverGeneral', state:null}, {p:2, piece:'goldGeneral', state:null}, {p:2, piece:'king', state:null}, {p:2, piece:'goldGeneral', state:null}, {p:2, piece:'silverGeneral', state:null}, {p:2, piece:'knight', state:null}, {p:2, piece:'lance', state:null}],
     [null, {p:2, piece:'rook', state:null}, null, null, null, null, null, {p:2, piece:'bishop', state:null}, null],
     [{p:2, piece:'pawn', state:null}, {p:2, piece:'pawn', state:null}, {p:2, piece:'pawn', state:null}, {p:2, piece:'pawn', state:null}, {p:2, piece:'pawn', state:null}, {p:2, piece:'pawn', state:null}, {p:2, piece:'pawn', state:null}, {p:2, piece:'pawn', state:null}, {p:2, piece:'pawn', state:null}],
-    [null, {p:1, piece:'bishop', state:null}, null,  {p:1, piece:'lance', state:null}, null,{ p:1, piece:'rook', state:null}, null, null, null],
+    [null, null, null, null, null, null, null, null, null],
     [null, null, null, null, null, null, null, null, null],
     [null, null, null, null, null, null, null, null, null],
     [{p:1, piece:'pawn', state:null}, {p:1, piece:'pawn', state:null}, {p:1, piece:'pawn', state:null}, {p:1, piece:'pawn', state:null}, {p:1, piece:'pawn', state:null}, {p:1, piece:'pawn', state:null}, {p:1, piece:'pawn', state:null}, {p:1, piece:'pawn', state:null}, {p:1, piece:'pawn', state:null}],
