@@ -4,7 +4,7 @@
 }
 .player > span {
     font-size: 2em;
-    border: solid;
+    border: solid #575757;
     border-radius: 15px;
     padding: 3px 200px;
 }
