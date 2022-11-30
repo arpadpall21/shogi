@@ -3,6 +3,7 @@ import './css/board.css';
 import { MessageBox } from './msgBox';
 import { store, incrementMoves } from '../store';
 import { defaultBoardState, calcStep } from './helpers/gameLogic';
+import pieceCollection from './helpers/pieceCollection';
 
 
 export function Board() {
@@ -64,7 +65,9 @@ export function Board() {
                                     backgroundColor = d.p === 1 ? 'green' : 'blueViolet';
                                 }
 
-                                return <td key={cellId} cellkey={cellId} style={{backgroundColor, color}} onClick={pieceMoveHandler}> {d.piece} </td>
+                                return <td key={cellId} cellkey={cellId} style={{backgroundColor, color}} onClick={pieceMoveHandler}>
+                                    <img className='piece_img' src={pieceCollection['promotedPawn']}></img> 
+                                </td>
                             }
 
                             return <td key={cellId} cellkey={cellId} onClick={pieceMoveHandler}> <span style={{visibility:'hidden'}}>歩</span> </td>

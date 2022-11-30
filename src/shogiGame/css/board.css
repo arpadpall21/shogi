@@ -10,7 +10,11 @@
 }
 .shogiBoard td {
     border: solid 2px black;
-    width: auto;
-    height: auto;
+    width: 60px;
+    height: 60px;
     font-size: 30px;
+}
+
+.piece_img {
+    max-width: 50px;
 }
