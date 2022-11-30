@@ -15,6 +15,10 @@
     font-size: 30px;
 }
 
-.piece_img {
+.pieceImg {
     max-width: 50px;
+}
+
+.rottatePieceImg {
+    transform: rotate(180deg);
 }

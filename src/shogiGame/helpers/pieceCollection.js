@@ -29,3 +29,6 @@ export default {
     promotedRook,
     promotedSilver,
 }
+
+
+console.log( knight )

@@ -41,19 +41,14 @@ export function Board() {
 
                             if (d) {
                                 let backgroundColor = undefined;
-                                let color = 'black';
 
-                                if (/[と全龍馬圭杏]/.test(d.piece)) {
-                                    color = 'red';
-                                }
-                                
                                 if (d.state) {
                                     switch (d.state) {
                                         case 'selected':
-                                            backgroundColor = 'orange';
+                                            backgroundColor = '#575757';
                                             break;
                                         case 'step':
-                                            backgroundColor = 'yellow';
+                                            backgroundColor = 'lightgreen';
                                             break;
                                         case 'kill':
                                             backgroundColor = 'orangeRed';
@@ -61,16 +56,19 @@ export function Board() {
                                         default:
                                             backgroundColor = '#d69f74';
                                     }
-                                } else {
-                                    backgroundColor = d.p === 1 ? 'green' : 'blueViolet';
                                 }
 
-                                return <td key={cellId} cellkey={cellId} style={{backgroundColor, color}} onClick={pieceMoveHandler}>
-                                    <img className='piece_img' src={pieceCollection['promotedPawn']}></img> 
+                                let className = 'pieceImg'
+                                if (d.p === 2) {
+                                    className += ' rottatePieceImg'
+                                }
+
+                                return <td key={cellId} cellkey={cellId} style={{backgroundColor}} onClick={pieceMoveHandler}>
+                                    <img className={className} draggable='false' src={pieceCollection[d.piece]} alt=''></img> 
                                 </td>
                             }
 
-                            return <td key={cellId} cellkey={cellId} onClick={pieceMoveHandler}> <span style={{visibility:'hidden'}}>歩</span> </td>
+                            return <td key={cellId} cellkey={cellId} onClick={pieceMoveHandler}> </td>
                         })}
                     </tr>
                 })}
