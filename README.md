@@ -1,4 +1,7 @@
-## Installation 
+# Description
+- React.Js implementation of the shogi game
+
+### Installation 
 - run `npm install` in the current directory
 
 ### Start shogi 
